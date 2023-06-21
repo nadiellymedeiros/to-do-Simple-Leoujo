@@ -18,14 +18,11 @@ export default function Home() {
     var todosArray = todos;
 
     for (var i in todosArray) {
-      if (todosArray[i].id == id) {
+      if (todosArray[i].id === id) {
         todosArray[i].text = editedText;
       }
     }
 
-    // console.log(todosArray);
-    // todosArray.splice(todosArray.id, 1, { text: editedText, id: id });
-    // console.log(todosArray);
     setTodos(todosArray);
   };
 
